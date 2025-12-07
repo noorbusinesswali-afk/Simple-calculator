@@ -1,0 +1,5 @@
+{
+  "name": "Tic-Tac-Toe AI",
+  "description": "A classic Tic-Tac-Toe game for two players featuring a smart AI assistant for strategic hints.",
+  "requestFramePermissions": []
+}
