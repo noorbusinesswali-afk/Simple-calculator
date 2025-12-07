@@ -1,5 +1,5 @@
 {
-  "name": "Tic-Tac-Toe AI",
-  "description": "A classic Tic-Tac-Toe game for two players featuring a smart AI assistant for strategic hints.",
+  "name": "Smart Tasks",
+  "description": "A smart to-do list application that helps you organize tasks and uses AI to break down goals into actionable steps.",
   "requestFramePermissions": []
 }

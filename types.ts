@@ -1,3 +1,14 @@
+export interface Todo {
+  id: string;
+  text: string;
+  completed: boolean;
+  createdAt: number;
+}
+
+export interface AiTaskResponse {
+  tasks: string[];
+}
+
 export type Player = 'X' | 'O' | null;
 
 export interface WinState {
@@ -5,16 +16,11 @@ export interface WinState {
   line: number[] | null;
 }
 
-export interface GameState {
-  board: Player[];
-  xIsNext: boolean;
-  winState: WinState | null;
-  history: Player[][];
-}
-
-export interface AiHint {
-  index: number;
-  reasoning: string;
+export interface CalculatorState {
+  currentOperand: string | null;
+  previousOperand: string | null;
+  operation: string | null;
+  overwrite: boolean;
 }
 
 export enum CalculatorActionType {
@@ -22,14 +28,7 @@ export enum CalculatorActionType {
   CHOOSE_OPERATION = 'CHOOSE_OPERATION',
   CLEAR = 'CLEAR',
   DELETE_DIGIT = 'DELETE_DIGIT',
-  EVALUATE = 'EVALUATE',
-}
-
-export interface CalculatorState {
-  currentOperand: string | null;
-  previousOperand: string | null;
-  operation: string | null;
-  overwrite: boolean;
+  EVALUATE = 'EVALUATE'
 }
 
 export interface CalculatorAction {
